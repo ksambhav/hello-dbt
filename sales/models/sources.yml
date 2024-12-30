@@ -1,0 +1,25 @@
+#https://stackoverflow.com/questions/76686355/using-a-dbt-source-with-references-to-multiple
+#version: 2
+#sources:
+#  - name: sales
+#    database: "{{ env_var('environment') }}"
+#    schema: sales # Not needed since it matches the source name
+#    tables:
+#      - name: table_a
+#
+#  - name: finance
+#    database: "{{ env_var('environment') }}"
+#    schema: finance
+#    tables:
+#      - name: table_b
+
+#https://docs.getdbt.com/docs/build/sources
+
+version: 2
+sources:
+  - name: raw_orders
+    description: "Raw source table for sales data"
+    database: samsoft
+    schema: dbt
+    tables:
+      - name: t_orders
