@@ -1,6 +1,4 @@
 --https://docs.getdbt.com/docs/build/materializations
-
-
 {{ config(materialized='table') }}
 
 WITH sales AS (

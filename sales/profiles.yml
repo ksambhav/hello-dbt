@@ -1,0 +1,13 @@
+# example profiles.yml file
+sales:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: user
+      password: password
+      port: 5432
+      dbname: samsoft
+      schema: dbt
+      threads: 1
