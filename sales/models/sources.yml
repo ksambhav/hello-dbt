@@ -19,7 +19,8 @@ version: 2
 sources:
   - name: raw_orders
     description: "Raw source table for sales data"
-    database: samsoft
+    database: mydbt
     schema: dbt
     tables:
       - name: t_orders
+      - name: t_transaction

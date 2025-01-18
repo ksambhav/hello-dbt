@@ -7,7 +7,7 @@ sales:
       host: localhost
       user: user
       password: password
-      port: 5432
-      dbname: samsoft
+      port: 31770
+      dbname: mydbt
       schema: dbt
       threads: 1
